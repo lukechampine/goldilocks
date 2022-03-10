@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: whitesmoke;
+  font-family: Poppins, sans-serif;
+  color: #0D0000;
+}
+
+#mapid {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+#slider {
+  height: 10px
+}
+
+.noUi-horizontal .noUi-tooltip {
+  bottom: -275%;
+}
+
+.noUi-handle {
+    box-shadow: none;
+}
+
+.noUi-horizontal .noUi-handle {
+  height: 18px;
+  width: 18px;
+  top: -5px;
+  right: -9px; /* half the width */
+  border-radius: 9px;
+}
+
+/* Hide markers on slider handles */
+.noUi-handle::before,
+.noUi-handle::after {
+    display: none;
+}
+
+.tooltip {
+  width: 300px;
+  white-space: normal;
+}
+
+h1 {
+  position: absolute;
+  z-index: 650;
+  top: 10px;
+  left: 15px;
+  padding: 8px 15px;
+  margin: 0;
+  color: whitesmoke;
+  font-size: 1.5em;
+  background: rgba(25, 25, 25, 0.8);
+  border-radius: 5px;
+}
+
+.legend {
+    padding: 8px 6px;
+    font-size: 1em;
+    background: rgba(75, 75, 75, 0.8);
+    color: whitesmoke;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 130px;
+}
+
+.legend h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 1em;
+    color: whitesmoke;
+    margin: 0;
+}
+
+.legend ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 12px 4px 0;
+}
+
+.legend li {
+    height: 22px;
+}
+
+.legend span {
+    width: 30px;
+    height: 20px;
+    float: left;
+    margin-right: 10px;
+}
+
+.legend p {
+  font-weight: bold;
+  line-height: 1em;
+  color: whitesmoke;
+  margin-bottom: 0px;
+}
+
+.legend a {
+  color: whitesmoke;
+}
+
+.legend a:hover {
+  color: #DBDBDB;
+}
+
+#ui-controls {
+    width: 176px;
+    padding: 8px 25px 8px 15px;
+    background: rgba(75, 75, 75, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: whitesmoke;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    z-index: 500;
+}
+
+#ui-controls .min {
+    float: left;
+}
+
+#ui-controls .max {
+    float: right;
+    margin-right: -15px;
+}
+
+.year-slider {
+    width: 100%;
+}
+
+label {
+    font-size: 1.1em;
+    font-weight: bold;
+}
